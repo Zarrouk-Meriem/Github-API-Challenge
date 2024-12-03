@@ -1,0 +1,30 @@
+@media (max-width: 83.375em) {
+  .container .profile .profile-content .heading {
+    flex-direction: column;
+    align-items: baseline !important;
+  }
+  .container .profile .profile-content .heading .joined {
+    font-size: 14px !important;
+  }
+  .container .profile .profile-content .repo-followers-following-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    width: -moz-fit-content;
+    width: fit-content;
+    align-self: center;
+  }
+  .container .profile .profile-content .information-section {
+    display: flex !important;
+    flex-direction: column;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .container .profile .profile-content .information-section p {
+    font-size: 14px;
+  }
+  .container .profile .profile-content .information-section .icon {
+    width: 1rem;
+    height: 1rem;
+  }
+}/*# sourceMappingURL=querries.css.map */

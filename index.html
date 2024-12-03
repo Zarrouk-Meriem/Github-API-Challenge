@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="script.js"></script>
+    <title>Github__API__challenge</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Italianno&family=Kumbh+Sans:wght@100..900&family=Manrope:wght@200..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+    </style>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="querries.css" />
+  </head>
+  <body class="">
+    <div class="container">
+      <div class="header">
+        <b class="logo">devfinder</b>
+        <button class="mode-btn">
+          <span class="mode-text" >LIGHT</span>
+          <ion-icon class="mode-icon icon dark-icon hidden" name="moon"></ion-icon>
+          <ion-icon class="mode-icon icon light-icon " name="sunny"></ion-icon>
+        </button>
+      </div>
+      <div class="search-bar">
+        <ion-icon class="search-icon" name="search"></ion-icon>
+        <input
+          placeholder="Search Github username..."
+          class="input-box"
+          type="text"
+        />
+        <p class="no-result hidden">no result</p>
+        <button class="search-btn">Search</button>
+      </div>
+      <div class="profile">
+        <div class="profile-img">
+          <img class="profile-pic"  src="img/profile pic.png" alt="" />
+        </div>
+        <div class="profile-content">
+          <div class="heading">
+            <div class="username-container">
+              <h4 class="username">The Octocat</h4>
+            </div>
+            <p class="joined">
+              Joined <span class="joined-date">25 Jan 2011</span>
+            </p>
+          </div>
+          <p class="nickname">@Octocat</p>
+          <div class="bio">
+            <p>this profile has no bio</p>
+          </div>
+          <div class="repo-followers-following-container">
+            <div class="section repo">
+              <p>Repos <br /><span class="repo-number">8</span></p>
+            </div>
+            <div class="section followers">
+              <p>followers <br /><span class="followers-number">3938</span></p>
+            </div>
+            <div class="section following">
+              <p>following <br /><span class="following-number">9</span></p>
+            </div>
+          </div>
+          <div class="information-section">
+            <div class="info">
+              <img class="icon info-icon location" src="img/location icon.svg" alt="" />
+              <p class="info-text location-text">San Francisco</p>
+            </div>
+            <div class="info">
+              <img class="icon info-icon  twitter" src="img/twitter icon.svg" alt="" />
+              <p class="info-text twitter-text">Not Available</p>
+            </div>
+            <div class="info">
+              <img class="icon info-icon github" src="img/link icon.svg" alt="" />
+              <p class="info-text github-text">http://github.blog</p>
+            </div>
+            <div class="info">
+              <img class="icon info-icon business" src="img/business icon.png" alt="" />
+              <p class="info-text business-text">@github</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="img-display hidden">
+      <div class="img-display"></div>
+      <img class="profile-pic-hidden" src="img/profile pic.png" alt="" />
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

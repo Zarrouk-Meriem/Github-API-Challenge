@@ -1,0 +1,20 @@
+:root{
+    /* SCSS RGB */
+    --black: rgba(0, 0, 0, 1);
+    --background-color: #141c2fff;
+    --container-color: rgba(31, 42, 72, 1);
+    --gray: rgba(141, 148, 164, 1);
+    --true-blue: rgba(6, 102, 210, 1);
+    --blue: rgba(0, 121, 254, 1);
+    --white: rgba(255, 255, 255, 1);
+}
+.lightmode{
+    --black:white;
+    --background-color:rgb(244, 252, 255);
+    --container-color:white;
+    --white:rgba(43, 52, 66, 1);
+    --gray: rgba(105, 124, 154, 1); 
+    --true-blue: rgba(6, 102, 210, 1);
+    --blue: rgba(0, 121, 254, 1);
+    --white:black;
+}

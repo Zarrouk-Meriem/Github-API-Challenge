@@ -1,0 +1,225 @@
+@import "variables";
+* {
+  transition: all 0.2s ease-in-out;
+  font-family: "Space Mono", monospace;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color);
+  height: 100vh;
+  .container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    width: 50%;
+    .header {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .logo {
+        color: var(--white);
+        font-size: 2rem;
+        cursor: pointer;
+      }
+      button {
+        cursor: pointer;
+        background: none;
+        border: none;
+        color: var(--white);
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        width: 10%;
+        gap: 1rem;
+        ion-icon {
+          font-size: 3rem;
+          height: 2rem;
+        }
+      }
+    }
+    .search-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      gap: 1rem;
+      background-color: var(--container-color);
+      border-radius: 1rem;
+      padding: 0.8rem;
+      .no-result{
+        color: red;
+        width: 15%;
+        font-size: 16px;
+      }
+      .search-icon {
+        padding-left: 1rem;
+        color: var(--blue);
+        font-size: 3rem;
+        cursor: pointer;
+      }
+      button {
+        &:hover {
+          // opacity: 60%;
+          box-shadow: 0 0 10px 10px rgba(0, 123, 254, 0.133);
+        }
+        cursor: pointer;
+        padding: 1rem 2rem;
+        font-size: 1rem;
+        border: none;
+        border-radius: 1rem;
+        background-color: var(--true-blue);
+        color: white;
+      }
+      input {
+        &:focus {
+          outline: none;
+        }
+        border: none;
+        background: none;
+        width: 100%;
+        color: var(--white);
+        font-size: 20px;
+      }
+      ::placeholder {
+        color: var(--white);
+        opacity: 80%;
+      }
+
+    }
+    .profile {
+      background-color: var(--container-color);
+      width: 100%;
+      border-radius: 1rem;
+      display: flex;
+      gap: 2rem;
+      padding: 3.6rem;
+      .profile-img {
+        width: 10rem;
+        height: 10rem;
+        border: none;
+        border-radius: 50%;
+        background-color: white;
+        padding: 3px;
+        img {
+          border-radius: 50%;
+          height: 100%;
+        }
+      }
+      .profile-content {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        .heading {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .username-container {
+            .username {
+              color: var(--white);
+              font-size: 2rem;
+              letter-spacing: 0.2rem;
+              font-weight: 600;
+            }
+          }
+          .joined {
+            color: var(--white  );
+            font-size: 16px;
+            font-weight: 500;
+          }
+        }
+        .nickname {
+          color: var(--blue);
+          font-weight: 500;
+        }
+        .bio {
+          padding: 2rem 0;
+          color: var(--gray);
+          font-size: 16px;
+          font-weight: 500;
+        }
+        .repo-followers-following-container {
+          background-color: var(--background-color);
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0.2rem 2rem;
+          border-radius: 1rem;
+          .section {
+            p {
+              line-height: 2.4rem;
+              color: var(--white);
+              font-weight: 500;
+            }
+            span {
+              font-size: 24px;
+              font-weight: 600;
+            }
+          }
+        }
+        .information-section {
+          margin: 2rem 0;
+          width: 100%;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 1fr 1fr;
+          column-gap: 3rem;
+          row-gap: 1rem;
+          img {
+            width: 2rem;
+            height: 2rem;
+          }
+
+          .info {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            color: var(--white);
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}
+.icon {
+  height: 1.7rem;
+  width: 1.7rem;
+}
+.ion-icon {
+  fill: white;
+}
+.img-display {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.328);
+  height: 100%;
+  width: 100%;
+  img {
+    z-index: 9999
+    ;
+    width: 25%;
+    background-color: white;
+    border-radius: 50%;
+  }
+}
+.hidden {
+  display: none;
+}
+.not-available {
+  opacity: 50%;
+  cursor: not-allowed !important;
+}
