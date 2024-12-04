@@ -46,9 +46,17 @@ async function getData() {
       if (!response.ok) {
         throw new Error(`Response status: ${response.status}`);
       }
+      let data = await response.json();
+      localStorage.setItem('user', JSON.stringify(data));
+      const storedUserData = localStorage.getItem('user');
+      if (storedUserData) {
+        data = JSON.parse(storedUserData);
+      } else {
+        getData();
+      }
 
-      const data = await response.json();
-      //localStorage.setItem()=data;
+      // Dealing with local storage thing
+
       // format time
       const date = new Date(data.created_at);
       const months = [
@@ -78,7 +86,6 @@ async function getData() {
         } else {
           if (text || text === 0) {
             element.textContent = text;
-            console.log(element.textContent);
           } else {
             if (element === username) element.textContent = "No Username";
             else if (element === bio)
